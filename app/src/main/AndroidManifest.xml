@@ -8,12 +8,11 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/dice_logo_cke"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/dice_logo_cke"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PocketRNG"
-        tools:targetApi="31">
+        android:theme="@style/Theme.PocketRNG">
         <activity
             android:name=".MainActivity"
             android:exported="true">
