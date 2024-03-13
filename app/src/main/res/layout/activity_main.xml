@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/txtMin"
+        android:layout_width="93dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txtJava"
         android:layout_width="wrap_content"
@@ -15,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMin" />
 
     <TextView
         android:id="@+id/txtRandomOrg"
@@ -59,4 +71,34 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMax"
+        android:layout_width="93dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMin" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Min:"
+        app:layout_constraintBottom_toTopOf="@+id/txtMin"
+        app:layout_constraintEnd_toEndOf="@+id/txtMin"
+        app:layout_constraintStart_toStartOf="@+id/txtMin" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max:"
+        app:layout_constraintEnd_toEndOf="@+id/txtMax"
+        app:layout_constraintStart_toStartOf="@+id/txtMax"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
